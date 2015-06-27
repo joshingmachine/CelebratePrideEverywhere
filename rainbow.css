@@ -1,0 +1,95 @@
+.cpeRainbow {
+	-webkit-animation: rainbow--entering 300ms ease-out; 
+	-moz-animation:    rainbow--entering 300ms ease-out;
+	-o-animation:      rainbow--entering 300ms ease-out; 
+	animation:         rainbow--entering 300ms ease-out;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+    pointer-events: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999999999;
+}
+
+.cpeRainbow--leaving {
+	-webkit-animation: rainbow--leaving 200ms ease-in; 
+	-moz-animation:    rainbow--leaving 200ms ease-in;
+	-o-animation:      rainbow--leaving 200ms ease-in; 
+	animation:         rainbow--leaving 200ms ease-in;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+    pointer-events: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999999999;
+}
+
+.cpeRed {
+	background-color: #F8876F;
+	flex: 1;
+	order: 1;
+}
+
+.cpeOrange {
+	background-color: #fcc876;
+	flex: 1;
+	order: 2;
+}
+
+.cpeYellow {
+	background-color: #ffea80;
+	flex: 1;
+	order: 3;
+}
+
+.cpeGreen {
+	background-color: #96f1b4;
+	flex: 1;
+	order: 4;
+}
+
+.cpeBlue {
+	background-color: #68cdf9;
+	flex: 1;
+	order: 5;
+}
+
+.cpeViolet {
+	background-color: #bb92fa;
+	flex: 1;
+	order: 6;
+}
+
+.cpeKoolAndTheGang {
+	bottom: 0;
+	flex: 0;
+	position: fixed;
+	right: 0;
+}
+
+
+@keyframes rainbow--entering {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes rainbow--leaving {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
